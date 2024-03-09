@@ -51,10 +51,30 @@ https://keep-steady.tistory.com/45
     ```
 
 ## Ubuntu 20.04 install
-1. window store 실행후 섬색하려설치
+1. window store 실행후 검색하려설치
 2. "WslRegisterDistribution failed with error: 0x8007019e
 The Windows Subsystem for Linux optional component is not enabled. Please enable it and try again. 에러 발생하면 아래 명령어 power shell 관리자권한 실행후 아래 입력후 재부팅  
 
     ```
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     ``` 
+
+## ROS 2 Foxy Fitzroy  install
+1. 참고  
+
+    ```
+    https://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html
+    ```
+2. 설치완료 확인
+    ```
+    source /opt/ros/foxy/setup.bash
+    ros2 run demo_nodes_cpp talker
+    ```
+    ```
+    source /opt/ros/foxy/setup.bash
+    ros2 run demo_nodes_py listener
+    ```
+3. 터미널 각각 실행후 위 명령어 실행
+4. 결과  
+
+    ![](./1.png)
