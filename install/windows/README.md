@@ -78,3 +78,52 @@ The Windows Subsystem for Linux optional component is not enabled. Please enable
 4. 결과  
 
     ![](./1.png)
+
+## install ubuntu visual studio code
+
+```
+sudo apt-get install curl
+```
+
+```
+sudo sh -c 'curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /etc/apt/trusted.gpg.d/microsoft.gpg'
+```
+
+```
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+```
+
+```
+sudo apt-get update
+```
+
+```
+sudo apt-get install code
+```
+
+```
+sudo rm /etc/apt/sources.list.d/vscode.list
+```
+
+한글폰트설치
+```
+sudo apt-get install fonts-nanum*
+```
+
+에러 발생시
+To use Visual Studio Code with the Windows Subsystem for Linux, please install Visual Studio Code in Windows and uninstall the Linux version in WSL. You can then use the `code` command in a WSL terminal just as you would in a normal command prompt.
+Do you want to continue anyway? [y/N] y
+To no longer see this prompt, start Visual Studio Code with the environment variable DONT_PROMPT_WSL_INSTALL defined.
+
+삭제
+```
+sudo apt purge code
+```
+
+윈도우에서 visual studio code 실행후 extension 및 wsl 설치후 우분투 터미널에서 아래 실행
+```
+code .
+```
+
+- 해당방법은 윈도우에 vs code 설치 안되있을경우 가능할듯하며, 이미 윈도우에 vs code 가 설치되었다면 플러그이을 확장하자.
+
