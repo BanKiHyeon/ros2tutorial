@@ -15,11 +15,13 @@ setup(
     zip_safe=True,
     maintainer='ban',
     maintainer_email='BanKiHyeon@gmail.com',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    description='Package description',
+    license='License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'helloworld_publisher = helloworld_rclpy_pkg.helloworld_publisher:main',
+            'helloworld_subscriber = helloworld_rclpy_pkg.helloworld_subscriber:main',
         ],
     },
 )
