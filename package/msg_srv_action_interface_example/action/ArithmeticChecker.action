@@ -1,5 +1,5 @@
 # Goal
-floate32 goal_sum
+float32 goal_sum
 ---
 # Result
 string[] all_formula
