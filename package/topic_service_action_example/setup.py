@@ -29,7 +29,7 @@ setup(
         'console_scripts': [
             'argument = topic_service_action_example.arithmatic.argument:main',
             'operator = topic_service_action_example.arithmatic.operator:main',
-            'calculatar = topic_service_action_example.calculatar.main:main',
+            'calculator = topic_service_action_example.calculator.main:main',
             'checker = topic_service_action_example.checker.main:main',
         ],
     },
