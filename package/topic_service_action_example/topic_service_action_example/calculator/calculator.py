@@ -66,6 +66,7 @@ class Calculator(Node):
             self.argument_a,
             self.argument_b,
             self.argument_operator)
+
         response.arithmetic_result = self.argument_result
         self.argument_formula = '{0} {1} {2} = {3}'.format(
                 self.argument_a,
