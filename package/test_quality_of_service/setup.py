@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'deadline = test_quality_of_service.deadline:main',
-            'lifespan = test_quality_of_service.lifespan:main'
+            'lifespan = test_quality_of_service.lifespan:main',
+            'liveliness = test_quality_of_service.liveliness:main',
         ],
     },
 )
