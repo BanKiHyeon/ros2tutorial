@@ -21,13 +21,13 @@ setup(
     entry_points={
         'console_scripts': [
             'deadline = test_quality_of_service.deadline:main',
+            'lifespan = test_quality_of_service.lifespan:main'
         ],
     },
 )
 
 
 #'incompatible_qos = test_quality_of_service.incompatible_qos:main',
-#'lifespan = test_quality_of_service.lifespan:main',
 #'liveliness = test_quality_of_service.liveliness:main',
 #'message_lost_listener = test_quality_of_service.message_lost_listener:main',
 #'qos_overrides_listener = test_quality_of_service.qos_overrides_listener:main',
