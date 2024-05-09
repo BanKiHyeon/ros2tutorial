@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'minimal_param_node = python_parameters.python_parameters_node:main'
         ],
     },
 )
