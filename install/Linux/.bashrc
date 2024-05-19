@@ -117,9 +117,11 @@ if ! shopt -oq posix; then
 fi
 
 # User Custom
-# source /opt/ros/foxy/setup.bash
-source /opt/ros/humble/setup.bash
-source ~/ros2_ws/install/local_setup.bash
+#source /opt/ros/foxy/setup.bash
+#source /opt/ros/humble/setup.bash
+#source ~/ros2_ws/install/local_setup.bash
+source /opt/ros/noetic/setup.bash
+source ~/ros_ws/devel/setup.bash
 
-alias cw='cd ~/ros2_ws'
-alias cs='cd ~/ros2_ws/src'
+alias cw='cd ~/ros_ws'
+alias cs='cd ~/ros_ws/src'
